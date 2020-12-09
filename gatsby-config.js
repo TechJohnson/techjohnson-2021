@@ -1,17 +1,29 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Web Developer & Graphic Designer`,
     author: {
-      name: `Kyle Mathews`,
+      name: `Steven Johnson`,
       summary: `who lives and works in San Francisco building useful things.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    description: `Front-end web developer and web specialist with over 10 years experience specializing in user interface (UI), user experience (UX), and general website creation in Pennsylvania.`,
+    siteUrl: `https://techjohnson.com/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `techjohnson`,
     },
   },
   plugins: [
+    {
+      resolve: 'gatsby-plugin-prefetch-google-fonts',
+      options: {
+        fonts: [
+          {
+            family: 'Nunito',
+            subsets: ['latin'],
+            variants: ['300', '400', '600', '700'],
+          },
+        ]
+      }
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

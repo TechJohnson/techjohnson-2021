@@ -1,0 +1,14 @@
+$primary: #3396EB;
+$black: #333538;
+$white: #ffffff;
+$font: 'Nunito', sans-serif;
+
+body {
+    font-family: $font;
+    font-size: 1rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
