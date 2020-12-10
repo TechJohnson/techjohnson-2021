@@ -11,7 +11,7 @@ const Index = ({ data, location }) => {
 
       <SEO title="Steven Johnson" />
 
-      <HomepageShowcase pageSubTitle='design. develop. repeat' />
+      <HomepageShowcase />
 
     </Layout>
   )

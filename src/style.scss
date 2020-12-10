@@ -46,6 +46,7 @@ body {
     a {
         text-decoration: none;
         color: $black;
+        transition: 0.2s all ease;
         &:hover {
             color: $primary;
         }
@@ -78,6 +79,11 @@ body {
     color: $white;
     font-weight: 600;
     font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s all ease;
+    &:hover {
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
 }
 
 .showcase {
