@@ -25,7 +25,7 @@ const Navigation = () => {
                         <p className='myName'>Steven Johnson</p>
                     </Link>
                 </div>
-                <div>
+                <div className='navLinks'>
                     <Link className='menuItem' to={'/'}>About</Link>
                     <Link className='menuItem' to={'/'}>Projects</Link>
                     <Link className='menuItem' to={'/'}>Services</Link>

@@ -11,6 +11,7 @@ body {
 
 .container {
     max-width: 1200px;
+    padding: 0 20px;
     margin: 0 auto;
 }
 
@@ -20,10 +21,24 @@ body {
     align-items: center;
     padding: 24px 0;
     margin: 0;
-    .menuItem {
-        font-weight: 600;
+    .navLinks {
         padding: 0;
-        margin: 0 24px;
+        margin: 0;
+        .menuItem {
+            font-weight: 600;
+            padding: 0;
+            margin: 0 24px;
+        }
+        a {
+            transition: 0.2s all ease;
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+    a {
+        text-decoration: none;
+        color: $black;
     }
     .menuItemBtn {
         font-weight: 600;
@@ -41,14 +56,6 @@ body {
             font-weight: 600;
             font-size: 1.125rem;
             margin-left: 10px;
-        }
-    }
-    a {
-        text-decoration: none;
-        color: $black;
-        transition: 0.2s all ease;
-        &:hover {
-            color: $primary;
         }
     }
 }
@@ -74,7 +81,7 @@ body {
 .blueBtn {
     background: $primary;
     border: none;
-    padding: 10px 25px;
+    padding: .75rem 2rem;    
     border-radius: 5px;
     color: $white;
     font-weight: 600;
@@ -82,15 +89,13 @@ body {
     cursor: pointer;
     transition: 0.3s all ease;
     &:hover {
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 10px 15px -3px rgba(0,0,0,.1), 0 4px 6px -2px rgba(0,0,0,.05);
     }
 }
 
 .showcase {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding: 100px 0;
     margin: 0;
     h2 {
@@ -104,11 +109,25 @@ body {
         font-size: 3.5rem;
         font-weight: 600;
         max-width: 700px;
-        text-align: center;
-        padding: 0;
+        padding-bottom: 50px;
         margin: 0;
         span {
             color: $primary;
         }
     }
+    a {
+        margin-left: 20px;
+        text-decoration: none;
+        color: #999999;
+        transition: 0.3s ease all;
+        left: 0;
+        &:hover {
+            border-bottom: 1px solid #999999;
+            padding-bottom: 2px;
+        }
+    }
+}
+
+.tdg-gray {
+    background-image: linear-gradient($white, #f4f4f4);
 }

@@ -10,8 +10,10 @@ const Index = ({ data, location }) => {
     <Layout location={location}>
 
       <SEO title="Steven Johnson" />
-
-      <HomepageShowcase />
+      
+      <div className='tdg-gray'>
+        <HomepageShowcase />
+      </div>
 
     </Layout>
   )
