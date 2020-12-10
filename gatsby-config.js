@@ -17,7 +17,7 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: 'Nunito',
+            family: 'Ubuntu',
             subsets: ['latin'],
             variants: ['300', '400', '600', '700'],
           },

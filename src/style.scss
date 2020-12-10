@@ -1,14 +1,76 @@
 $primary: #3396EB;
-$black: #333538;
+$black: #2b2b2b;
 $white: #ffffff;
-$font: 'Nunito', sans-serif;
+$font: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Helvetica Neue,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
 
 body {
     font-family: $font;
     font-size: 1rem;
+    color: $black;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+    margin: 0;
+    .menuItem {
+        font-weight: 600;
+        padding: 0;
+        margin: 0 24px;
+    }
+    p {
+        padding: 0;
+        margin: 0;
+    }
+    .siteTitle {
+        display: flex;
+        align-items: center;
+        .myName {
+            font-weight: 600;
+            font-size: 1.125rem;
+            margin-left: 10px;
+        }
+    }
+    a {
+        text-decoration: none;
+        color: $black;
+        &:hover {
+            color: $primary;
+        }
+    }
+}
+
+.announcementBar {
+    display: flex;
+    justify-content: center;
+    background: $black;
+    padding: 10px 0;
+    margin: 0;
+    p {
+        font-weight: 400;
+        color: $white;
+        padding: 0;
+        margin: 0;
+        span {
+            font-weight: 700;
+            color: $primary;
+        }
+    }
+}
+
+.blueBtn {
+    background: $primary;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    color: $white;
+    font-weight: 600;
+    font-size: 1rem;
 }

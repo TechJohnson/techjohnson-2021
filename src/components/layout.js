@@ -1,11 +1,18 @@
 import React from "react"
+import Announcement from "../components/announcement"
 import Navigation from "../components/navigation"
 
-const Layout = ({ }) => {
+const Layout = ({  }) => {
 
   return (
-    
-    <Navigation />  
+    <div>
+
+      <Announcement />
+      
+      <Navigation />  
+
+    </div>
+
   
   )
 
