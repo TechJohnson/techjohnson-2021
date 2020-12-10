@@ -25,6 +25,11 @@ body {
         padding: 0;
         margin: 0 24px;
     }
+    .menuItemBtn {
+        font-weight: 600;
+        padding: 0;
+        margin-left: 24px;
+    }
     p {
         padding: 0;
         margin: 0;
@@ -73,4 +78,31 @@ body {
     color: $white;
     font-weight: 600;
     font-size: 1rem;
+}
+
+.showcase {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+    margin: 0;
+    h2 {
+        font-size: 1.5rem;
+        font-weight: 500;
+        text-transform: capitalize;
+        padding: 0;
+        margin-bottom: 24px;
+    }
+    h1 {
+        font-size: 3.5rem;
+        font-weight: 600;
+        max-width: 700px;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        span {
+            color: $primary;
+        }
+    }
 }

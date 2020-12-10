@@ -2,18 +2,22 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import HomepageShowcase from "../components/homepageshowcase"
 
-const BlogIndex = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata?.title || `Title`
+const Index = ({ data, location }) => {
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={location}>
+
       <SEO title="Steven Johnson" />
+
+      <HomepageShowcase pageSubTitle='design. develop. repeat' />
+
     </Layout>
   )
 }
 
-export default BlogIndex
+export default Index
 
 export const pageQuery = graphql`
   query {

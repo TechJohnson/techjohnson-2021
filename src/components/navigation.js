@@ -30,7 +30,7 @@ const Navigation = () => {
                     <Link className='menuItem' to={'/'}>Projects</Link>
                     <Link className='menuItem' to={'/'}>Services</Link>
                     <Link className='menuItem' to={'/'}>Blog</Link>
-                    <Link className='menuItem' to={'/'}>
+                    <Link className='menuItemBtn' to={'/'}>
                         <BlueBtn buttonText='Hire Me' />
                     </Link>
                 </div>
