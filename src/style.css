@@ -167,4 +167,34 @@ body {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f4f4f4));
   background-image: linear-gradient(#ffffff, #f4f4f4);
 }
+
+.solutionSection {
+  padding: 0;
+  margin: 0;
+}
+
+.solutionSection .solutions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: #999999;
+  padding: 25px 0;
+  margin: 0;
+}
+
+.solutionSection .solutions p {
+  text-transform: uppercase;
+  font-size: .875rem;
+  letter-spacing: .25rem;
+  padding: 0;
+  margin: 0;
+}
 /*# sourceMappingURL=style.css.map */

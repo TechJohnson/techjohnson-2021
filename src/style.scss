@@ -1,4 +1,5 @@
 $primary: #3396EB;
+$gray: #999999;
 $black: #2b2b2b;
 $white: #ffffff;
 $font: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Helvetica Neue,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
@@ -118,11 +119,11 @@ body {
     a {
         margin-left: 20px;
         text-decoration: none;
-        color: #999999;
+        color: $gray ;
         transition: 0.3s ease all;
         left: 0;
         &:hover {
-            border-bottom: 1px solid #999999;
+            border-bottom: 1px solid $gray ;
             padding-bottom: 2px;
         }
     }
@@ -130,4 +131,25 @@ body {
 
 .tdg-gray {
     background-image: linear-gradient($white, #f4f4f4);
+}
+
+.solutionSection {
+    padding: 0;
+    margin: 0;
+    .solutions {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        color: $gray;
+        padding: 25px 0;
+        margin: 0;
+        p {
+            text-transform: uppercase;
+            font-size: .875rem;
+            letter-spacing: .25rem;
+            padding: 0;
+            margin: 0;
+        }
+    }
 }

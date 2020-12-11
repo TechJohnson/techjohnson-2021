@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import HomepageShowcase from "../components/homepageshowcase"
+import Solutions from "../components/solutions"
 
 const Index = ({ data, location }) => {
 
@@ -14,6 +15,8 @@ const Index = ({ data, location }) => {
       <div className='tdg-gray'>
         <HomepageShowcase />
       </div>
+      
+      <Solutions />
 
     </Layout>
   )
