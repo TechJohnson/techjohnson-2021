@@ -7,9 +7,17 @@ import BlueBtn from "./blueBtn"
 const Power = () => {
     const data = useStaticQuery(graphql`
     query {
-        digiapps: file(absolutePath: { regex: "/digiapps-logo.png/" }) {
+        powerlarge: file(absolutePath: { regex: "/power-img.png/" }) {
             childImageSharp {
-                fixed(height: 75) {
+                fluid(maxWidth: 1000, quality: 100) {
+                ...GatsbyImageSharpFluid
+                ...GatsbyImageSharpFluidLimitPresentationSize
+                }
+            }
+        }
+        powersmall: file(absolutePath: { regex: "/power-img.png/" }) {
+            childImageSharp {
+                fixed(width: 320, quality: 100) {
                 ...GatsbyImageSharpFixed
                 }
             }
@@ -33,7 +41,7 @@ const Power = () => {
                             <div className="column" style={{
                                 width: '50%'
                             }}>
-                                <Img fixed={data.digiapps.childImageSharp.fixed} style={{ padding: 0, margin: 0 }} />
+                                <Img fluid={data.powerlarge.childImageSharp.fluid} style={{ padding: 0, margin: 0 }} />
                             </div>
                             <div className="column" style={{
                                 width: '50%'
@@ -59,7 +67,7 @@ const Power = () => {
                             alignItems: 'center'
                         }}>
                             <div className="column">
-                                <Img fixed={data.digiapps.childImageSharp.fixed} style={{ padding: 0, margin: 0 }} />
+                                <Img fixed={data.powersmall.childImageSharp.fixed} style={{ padding: 0, margin: 0 }} />
                             </div>
                             <div className="column">
                                 <h3>Knowledge is power</h3>
