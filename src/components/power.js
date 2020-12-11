@@ -1,10 +1,12 @@
 import React from "react"
 import Img from "gatsby-image"
 import { Link, useStaticQuery, graphql } from "gatsby"
-import MediaQuery from "react-responsive"
+import Responsive from "react-responsive"
 import BlueBtn from "./blueBtn"
 
 const Power = () => {
+    const Desktop = props => <Responsive {...props} minWidth={760} />;
+    const Mobile = props => <Responsive {...props} maxWidth={759} />;
     const data = useStaticQuery(graphql`
     query {
         powerlarge: file(absolutePath: { regex: "/power-img.png/" }) {
@@ -30,7 +32,7 @@ const Power = () => {
         <div>
 
             {/* Desktop view */}
-            <MediaQuery minDeviceWidth={760} maxResolution="2dppx">
+            <Desktop>
                 <div className='power'>
                     <div className="container">
                         <div className="split" style={{
@@ -55,10 +57,10 @@ const Power = () => {
                         </div>
                     </div>
                 </div>        
-            </MediaQuery>
+            </Desktop>
 
             {/* Mobile view */}
-            <MediaQuery maxDeviceWidth={759} maxResolution="2dppx">
+            <Mobile>
                 <div className='power'>
                     <div className="container">
                         <div className="split" style={{
@@ -79,7 +81,7 @@ const Power = () => {
                         </div>
                     </div>
                 </div>             
-            </MediaQuery>
+            </Mobile>
 
       </div>
 
