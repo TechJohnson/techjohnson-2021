@@ -197,4 +197,55 @@ body {
   padding: 0;
   margin: 0;
 }
+
+.power {
+  padding: 100px 0;
+  margin: 0;
+}
+
+.column {
+  padding: 0;
+  margin: 0;
+}
+
+.column p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #2b2b2b;
+  padding-bottom: 25px;
+  margin: 0;
+}
+
+.column h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2b2b2b;
+  padding: 15px 0 25px 0;
+  margin: 0;
+}
+
+.column h3 {
+  font-size: .85rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .15rem;
+  border-left: 3px solid #3396EB;
+  color: #999999;
+  padding: 5px 0 5px 10px;
+  margin: 0;
+}
+
+.column a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #999999;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+  left: 0;
+}
+
+.column a:hover {
+  border-bottom: 1px solid #999999;
+  padding-bottom: 2px;
+}
 /*# sourceMappingURL=style.css.map */
