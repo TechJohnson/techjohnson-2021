@@ -95,6 +95,10 @@ body {
 }
 
 .showcase {
+    background-image: url('../content/assets/steven-showcase.png');
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     padding: 100px 0;
