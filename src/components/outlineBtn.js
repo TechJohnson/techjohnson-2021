@@ -13,6 +13,8 @@ const OutlineBtn = (props) => {
             fontWeight: '600',
             fontSize: '1rem',
             textTransform: 'uppercase',
+            outline: 'none',
+            cursor: 'pointer'
         }}>
             {props.buttonText}
         </button>

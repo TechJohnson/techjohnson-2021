@@ -107,6 +107,7 @@ body {
   color: #ffffff;
   font-weight: 600;
   font-size: 1rem;
+  outline: none;
   cursor: pointer;
   -webkit-transition: 0.3s all ease;
   transition: 0.3s all ease;

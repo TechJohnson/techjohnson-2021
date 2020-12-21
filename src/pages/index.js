@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 import HomepageShowcase from "../components/homepageshowcase"
 import Solutions from "../components/solutions"
 import Power from "../components/power"
-import NumberSection from "../components/numberSection"
+import DigiAppsPortfolio from "../components/digiAppsPortfolio"
 
 const Index = ({ data, location }) => {
 
@@ -22,7 +22,7 @@ const Index = ({ data, location }) => {
 
       <Power />
 
-      <NumberSection />
+      <DigiAppsPortfolio />
 
     </Layout>
   )
