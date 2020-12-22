@@ -6,6 +6,7 @@ import HomepageShowcase from "../components/homepageshowcase"
 import Solutions from "../components/solutions"
 import Power from "../components/power"
 import DigiAppsPortfolio from "../components/digiAppsPortfolio"
+import MyTech from "../components/myTech"
 
 const Index = ({ data, location }) => {
 
@@ -23,6 +24,8 @@ const Index = ({ data, location }) => {
       <Power />
 
       <DigiAppsPortfolio />
+
+      <MyTech />
 
     </Layout>
   )
