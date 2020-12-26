@@ -37,13 +37,13 @@ const MyTech = () => {
                         color: '#2b2b2b',
                         padding: '15px 0 25px 0',
                         margin: '0'
-                    }}>My <span style={{color: '#3396EB'}}>Preferred</span> Stack</h2>
+                    }}>My Preferred Stack</h2>
                     <p style={{
                         lineHeight: '1.7',
                         color: '#2b2b2b',
                         padding: '0',
                         margin: '0'
-                    }}>This is where I talk about the languages and platforms I use to design and develop. Give some personality here.</p>
+                    }}>As full-time graphic designers and web developers, I feel the technology in which we use to get a job done is always changing. Technology moves so rapidly it's almost impossible to keep up. I take great pride in sticking to a few technologies and truly learning the ins-and-outs of each.</p>
                 </div>
             </div>
 
