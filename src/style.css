@@ -253,4 +253,21 @@ body {
   border-bottom: 1px solid #999999;
   padding-bottom: 2px;
 }
+
+.stackBox {
+  width: 250px;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin: 10px 0;
+}
+
+.item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 /*# sourceMappingURL=style.css.map */
