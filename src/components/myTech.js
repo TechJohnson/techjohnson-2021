@@ -13,9 +13,44 @@ const MyTech = () => {
                 }
             }
         }
-        htmls: file(absolutePath: { regex: "/sitting-on-deck.png/" }) {
+        html: file(absolutePath: { regex: "/html.png/" }) {
             childImageSharp {
-                fixed(width: 75, quality: 100) {
+                fixed(width: 60, quality: 100) {
+                    ...GatsbyImageSharpFixed
+                }
+            }
+        }
+        css: file(absolutePath: { regex: "/css.png/" }) {
+            childImageSharp {
+                fixed(width: 60, quality: 100) {
+                    ...GatsbyImageSharpFixed
+                }
+            }
+        }
+        gatsby: file(absolutePath: { regex: "/gatsby.png/" }) {
+            childImageSharp {
+                fixed(width: 60, quality: 100) {
+                    ...GatsbyImageSharpFixed
+                }
+            }
+        }
+        javascript: file(absolutePath: { regex: "/javascript.png/" }) {
+            childImageSharp {
+                fixed(width: 60, quality: 100) {
+                    ...GatsbyImageSharpFixed
+                }
+            }
+        }
+        react: file(absolutePath: { regex: "/react.png/" }) {
+            childImageSharp {
+                fixed(width: 60, quality: 100) {
+                    ...GatsbyImageSharpFixed
+                }
+            }
+        }
+        sass: file(absolutePath: { regex: "/sass.png/" }) {
+            childImageSharp {
+                fixed(width: 60, quality: 100) {
                     ...GatsbyImageSharpFixed
                 }
             }
@@ -78,29 +113,29 @@ const MyTech = () => {
                             }}>
                             <div className="column">
                                 <div className="item">
-                                    <Img fixed={data.htmls.childImageSharp.fixed} style={{ marginRight: '10px' }} />
+                                    <Img fixed={data.html.childImageSharp.fixed} style={{ marginRight: '10px' }} />
                                     <p>HTML</p>
                                 </div>
                                 <div className="item">
-                                    <Img fixed={data.htmls.childImageSharp.fixed} style={{ marginRight: '10px' }} />
+                                    <Img fixed={data.css.childImageSharp.fixed} style={{ marginRight: '10px' }} />
                                     <p>CSS</p>
                                 </div>
                                 <div className="item">
-                                    <Img fixed={data.htmls.childImageSharp.fixed} style={{ marginRight: '10px' }} />
-                                    <p>SCSS</p>
+                                    <Img fixed={data.sass.childImageSharp.fixed} style={{ marginRight: '10px' }} />
+                                    <p>SASS</p>
                                 </div>
                             </div>
                             <div className="column">
                                 <div className="item">
-                                    <Img fixed={data.htmls.childImageSharp.fixed} style={{ marginRight: '10px' }} />
+                                    <Img fixed={data.javascript.childImageSharp.fixed} style={{ marginRight: '10px' }} />
                                     <p>JavaScript</p>
                                 </div>
                                 <div className="item">
-                                    <Img fixed={data.htmls.childImageSharp.fixed} style={{ marginRight: '10px' }} />
+                                    <Img fixed={data.react.childImageSharp.fixed} style={{ marginRight: '10px' }} />
                                     <p>React</p>
                                 </div>
                                 <div className="item">
-                                    <Img fixed={data.htmls.childImageSharp.fixed} style={{ marginRight: '10px' }} />
+                                    <Img fixed={data.gatsby.childImageSharp.fixed} style={{ marginRight: '10px' }} />
                                     <p>Gatsby</p>
                                 </div>
                             </div>
