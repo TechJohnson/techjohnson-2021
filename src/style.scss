@@ -95,6 +95,25 @@ body {
     }
 }
 
+.outlineBtn {
+    background: none;
+    padding: 1.25rem 4rem;
+    margin-top: 25px;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s all ease;
+    &:hover {
+        background: $white;
+        color: $black;
+    }
+}
+
 .showcase {
     background-image: url('../content/assets/steven-showcase.png');
     background-position: right;

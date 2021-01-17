@@ -7,6 +7,7 @@ import Solutions from "../components/solutions"
 import Power from "../components/power"
 import DigiAppsPortfolio from "../components/digiAppsPortfolio"
 import MyTech from "../components/myTech"
+import WindowsPortfolio from "../components/windowsPortfolio"
 
 const Index = ({ data, location }) => {
 
@@ -26,6 +27,8 @@ const Index = ({ data, location }) => {
       <DigiAppsPortfolio />
 
       <MyTech />
+
+      <WindowsPortfolio />
 
     </Layout>
   )
