@@ -10,7 +10,7 @@ const Desktop = props => <Responsive {...props} minWidth={760} />;
 const Mobile = props => <Responsive {...props} maxWidth={759} />;
 const data = useStaticQuery(graphql`
 query {
-    digiwhite: file(absolutePath: { regex: "/digiapps-white.png/" }) {
+    windowwhite: file(absolutePath: { regex: "/logo-white.png/" }) {
         childImageSharp {
             fixed(width: 225, quality: 100) {
             ...GatsbyImageSharpFixed
@@ -48,12 +48,12 @@ query {
                             <div style={{
                                 width: '40%'
                             }}>
-                                <Img fixed={data.digiwhite.childImageSharp.fixed} style={{ padding: 0, margin: 0 }} />
+                                <Img fixed={data.windowwhite.childImageSharp.fixed} style={{ padding: 0, margin: 0 }} />
                                 <h2 style={{
                                     fontSize: '1.5rem',
                                     padding: '50px 0 25px 0',
                                     margin: '0'
-                                }}>Affordable Windows & Doors</h2>
+                                }}>Windows for Every Budget</h2>
                                 <hr style={{
                                     border: '2px solid #ffffff',
                                     width: '50px',
@@ -90,12 +90,12 @@ query {
                 }}>
                     <div className="container">
                         <Img fluid={data.digiappsdisplay.childImageSharp.fluid} style={{ padding: 0, margin: '0 0 50px 0' }} />
-                        <Img fixed={data.digiwhite.childImageSharp.fixed} style={{ padding: 0, margin: 0 }} />
+                        <Img fixed={data.windowwhite.childImageSharp.fixed} style={{ padding: 0, margin: 0 }} />
                         <h2 style={{
                             fontSize: '1.5rem',
                             padding: '50px 0 25px 0',
                             margin: '0'
-                        }}>Affordable Windows & Doors</h2>
+                        }}>Windows for Every Budget</h2>
                         <hr style={{
                             border: '2px solid #ffffff',
                             width: '50px',
