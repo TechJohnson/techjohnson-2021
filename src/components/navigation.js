@@ -4,6 +4,7 @@ import Img from "gatsby-image"
 import BlueBtn from "./blueBtn"
 
 const Navigation = () => {
+    alert("Before moving forward, understand this website is still under production. If you wish to connect with me, please send me an email: steven@techjohnson.com");
     const data = useStaticQuery(graphql`
     query {
         avatar: file(absolutePath: { regex: "/steven.png/" }) {
