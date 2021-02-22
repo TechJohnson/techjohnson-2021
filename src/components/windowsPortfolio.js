@@ -17,9 +17,9 @@ query {
             }
         }
     }
-    digiappsdisplay: file(absolutePath: { regex: "/digiappsdisplay.png/" }) {
+    replacementdisplay: file(absolutePath: { regex: "/replacement-windows-display.png/" }) {
         childImageSharp {
-            fluid(maxWidth: 1000, quality: 100) {
+            fluid(maxHeight: 1000, quality: 100) {
                 ...GatsbyImageSharpFluid
                 ...GatsbyImageSharpFluidLimitPresentationSize
             }
@@ -70,7 +70,7 @@ query {
                             <div style={{
                                 width: '60%'
                             }}>
-                                <Img fluid={data.digiappsdisplay.childImageSharp.fluid} style={{ padding: 0, margin: 0 }} />
+                                <Img fluid={data.replacementdisplay.childImageSharp.fluid} style={{ padding: 0, margin: 0 }} />
                             </div>
                         </div>
                     </div>
@@ -89,7 +89,7 @@ query {
                     color: '#ffffff',
                 }}>
                     <div className="container">
-                        <Img fluid={data.digiappsdisplay.childImageSharp.fluid} style={{ padding: 0, margin: '0 0 50px 0' }} />
+                        <Img fluid={data.replacementdisplay.childImageSharp.fluid} style={{ padding: 0, margin: '0 0 50px 0' }} />
                         <Img fixed={data.windowwhite.childImageSharp.fixed} style={{ padding: 0, margin: 0 }} />
                         <h2 style={{
                             fontSize: '1.5rem',

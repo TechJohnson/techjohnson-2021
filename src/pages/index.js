@@ -8,6 +8,7 @@ import Power from "../components/power"
 import DigiAppsPortfolio from "../components/digiAppsPortfolio"
 import MyTech from "../components/myTech"
 import WindowsPortfolio from "../components/windowsPortfolio"
+import AboutMe from "../components/aboutMe"
 
 const Index = ({ data, location }) => {
 
@@ -29,6 +30,8 @@ const Index = ({ data, location }) => {
       <MyTech />
 
       <WindowsPortfolio />
+
+      <AboutMe />
 
     </Layout>
   )
