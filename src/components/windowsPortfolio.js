@@ -65,7 +65,10 @@ query {
                                     paddingTop: '25px',
                                     margin: '0'
                                 }}>Receive new windows with no long demo, no pushy salesman and no huge markeup. No matter your financial situation, they have a pricing structure that works for you!</p>
+                                <Link to={'https://replacementwindowsonline.com/'}>
+
                                 <OutlineBtn buttonText="Learn More" />
+                                </Link>
                             </div>
                             <div style={{
                                 width: '60%'
@@ -107,8 +110,10 @@ query {
                             paddingTop: '25px',
                             margin: '0'
                         }}>Receive new windows with no long demo, no pushy salesman and no huge markeup. No matter your financial situation, they have a pricing structure that works for you!</p>
-                        <OutlineBtn buttonText="Learn More" />
-                    </div>
+                                <Link to={'https://replacementwindowsonline.com/'}>
+
+<OutlineBtn buttonText="Learn More" />
+</Link>                    </div>
                 </div>
             </Mobile>
 
