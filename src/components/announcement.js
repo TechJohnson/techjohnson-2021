@@ -4,7 +4,7 @@ const Announcement = () => {
 
     return (
         <div className='announcementBar'>
-            <p><span>COVID-19 Update</span>: Get your business online and help stop the spread!</p>
+            <p><span>COVID-19</span>: Get your business online and help stop the spread!</p>
         </div>
     )
 
