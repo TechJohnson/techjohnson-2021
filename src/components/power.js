@@ -52,7 +52,7 @@ const Power = () => {
                                 <h2>Everything you need to scale your business</h2>
                                 <p>My name is Steven Johnson and I have a passion for creating websites to help grow and scale your company to make more sales by combining your goals with my decade-long experience in a fast growing industry.</p>
                                 <BlueBtn buttonText="Learn More" />
-                                <Link to={'/'}>Let's have a conversation</Link>
+                                <Link to={'https://twitter.com/techjohnson'} target="_blank" rel="noopener noreferrer nofollow">Let's have a conversation</Link>
                             </div>
                         </div>
                     </div>
@@ -78,7 +78,7 @@ const Power = () => {
                                 <Link to={'https://twitter.com/techjohnson'}>
                                     <BlueBtn buttonText="Learn More" />
                                 </Link>
-                                <Link to={'https://twitter.com/techjohnson'}>Let's have a conversation</Link>
+                                <Link to={'https://twitter.com/techjohnson'} target="_blank" rel="noopener noreferrer nofollow">Let's have a conversation</Link>
                             </div>
                         </div>
                     </div>

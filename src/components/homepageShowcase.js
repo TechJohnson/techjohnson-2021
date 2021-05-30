@@ -32,7 +32,7 @@ const Showcase = (props) => {
                 </h1>
                 <div className="connect">
                     <BlueBtn buttonText="Let's Chat" />
-                    <Link to={'/'}>View my recent projects</Link>
+                    <Link to={'https://dribbble.com/techjohnson'} target="_blank" rel="noopener noreferrer nofollow">View my recent projects</Link>
                 </div>
             </div>
         </div>

@@ -26,11 +26,11 @@ const Navigation = () => {
                     </Link>
                 </div>
                 <div className='navLinks'>
-                    <Link className='menuItem' to={'https://twitter.com/techjohnson'}>About</Link>
-                    <Link className='menuItem' to={'https://dribbble.com/TechJohnson'}>Projects</Link>
+                    <Link className='menuItem' to={'https://twitter.com/techjohnson'} target="_blank" rel="noopener noreferrer nofollow">About</Link>
+                    <Link className='menuItem' to={'https://dribbble.com/TechJohnson'} target="_blank" rel="noopener noreferrer nofollow">Projects</Link>
                     <Link className='menuItem' to={'/'}>Services</Link>
                     <Link className='menuItem' to={'/'}>Blog</Link>
-                    <Link className='menuItemBtn' to={'https://twitter.com/techjohnson'}>
+                    <Link className='menuItemBtn' to={'https://twitter.com/techjohnson'} target="_blank" rel="noopener noreferrer nofollow">
                         <BlueBtn buttonText='Hire Me' />
                     </Link>
                 </div>
