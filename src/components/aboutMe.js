@@ -64,12 +64,14 @@ query {
                             paddingBottom: '25px',
                             margin: '0'
                         }}>That's right! I'm a huge guitar enthusiast. If I'm not advancing my skills within development and design, I'm probably practicing the guitar. Why do I say this? Simple! I take great pride in making connections with my clients and do my best to not make it feel so steril.</p>
-                        <BlueBtn buttonText="About Me" />
+                        <Link to={'https://youtube.com/techjohnson'} target="_blank" rel="noopener noreferrer nofollow">
+                            <BlueBtn buttonText="My YouTube Channel" />
+                        </Link>
                         <Link to={'http://twitter.com/techjohnson'} style={{
                             color: '#999999',
                             textDecoration: 'none',
                             marginLeft: '20px'
-                        }}>Follow me on Twitter</Link>
+                        }} target="_blank" rel="noopener noreferrer nofollow">Follow me on Twitter</Link>
                         </div>
                     </div>
                 </div>
