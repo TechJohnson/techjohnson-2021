@@ -30,7 +30,7 @@ const Navigation = () => {
                     <Link className='menuItem' to={'https://dribbble.com/TechJohnson'} target="_blank" rel="noopener noreferrer nofollow">Projects</Link>
                     <Link className='menuItem' to={'/'}>Services</Link>
                     <Link className='menuItem' to={'/'}>Blog</Link>
-                    <Link className='menuItemBtn' to={'https://twitter.com/techjohnson'} target="_blank" rel="noopener noreferrer nofollow">
+                    <Link className='menuItemBtn' to={'/contact'}>
                         <BlueBtn buttonText='Hire Me' />
                     </Link>
                 </div>

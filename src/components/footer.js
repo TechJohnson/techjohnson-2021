@@ -107,7 +107,7 @@ query {
                 <Link style={{ padding: '0 15px', fontWeight: '600', color: '#999999', textDecoration: 'none' }} className='menuItem' to={'/'}>Projects</Link>
                 <Link style={{ padding: '0 15px', fontWeight: '600', color: '#999999', textDecoration: 'none' }} className='menuItem' to={'/'}>Services</Link>
                 <Link style={{ padding: '0 15px', fontWeight: '600', color: '#999999', textDecoration: 'none' }} className='menuItem' to={'/'}>Blog</Link>
-                <Link style={{ padding: '0 15px', fontWeight: '600', color: '#999999', textDecoration: 'none' }} className='menuItem' to={'/'}>Hire Me</Link>
+                <Link style={{ padding: '0 15px', fontWeight: '600', color: '#999999', textDecoration: 'none' }} className='menuItem' to={'/contact'}>Hire Me</Link>
             </div>
 
             <div style={{

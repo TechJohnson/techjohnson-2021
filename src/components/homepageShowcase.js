@@ -31,7 +31,7 @@ const Showcase = (props) => {
                     I create <span>modern</span> websites that help you grow
                 </h1>
                 <div className="connect">
-                    <Link to={'https://twitter.com/techjohnson'} target="_blank" rel="noopener noreferrer nofollow">
+                    <Link to={'/contact'}>
                     <BlueBtn buttonText="Let's Chat" />
                     </Link>
                     <Link className="showcase-project" to={'https://dribbble.com/techjohnson'} target="_blank" rel="noopener noreferrer nofollow">View my recent projects</Link>
