@@ -123,7 +123,6 @@ query {
                                 <h2 style={{textAlign: 'center', paddingBottom: '15px'}}>Project Submission Form</h2>
                                 <p style={{textAlign: 'center'}}>Are you looking to get started on a new project? If so, fill out the form below and I'll be in contact shortly!</p>
                                 
-                                {/* Project Submission Form */}
                                 <form name="Business Inquiry" method="POST" data-netlify="true">
                                     <div style={{display:'flex', justifyContent: 'space-between', padding: '50px 0 0 0'}}>
                                         <div style={{width: '49%'}}>   
