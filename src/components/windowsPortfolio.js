@@ -1,7 +1,7 @@
 import React from "react"
 import Responsive from "react-responsive"
 import Img from "gatsby-image"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import OutlineBtn from "./outlineBtn"
 
 
@@ -34,7 +34,6 @@ query {
         <div>
 
             <Desktop>   
-                {/* DigiApps Portfolio Section */}
                 <div className="numberSection" style={{
                     backgroundColor: '#71808E',
                     padding: '150px 0',

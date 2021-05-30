@@ -65,7 +65,7 @@ query {
                             margin: '0'
                         }}>That's right! I'm a huge guitar enthusiast. If I'm not advancing my skills within development and design, I'm probably practicing the guitar. Why do I say this? Simple! I take great pride in making connections with my clients and do my best to not make it feel so steril.</p>
                         <BlueBtn buttonText="About Me" />
-                        <Link target="_blank" rel="noopener noreferrer nofollow" to={'http://twitter.com/techjohnson'} style={{
+                        <Link to={'http://twitter.com/techjohnson'} style={{
                             color: '#999999',
                             textDecoration: 'none',
                             marginLeft: '20px'

@@ -1,7 +1,7 @@
 import React from "react"
 import Responsive from "react-responsive"
 import Img from "gatsby-image"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import OutlineBtn from "./outlineBtn"
 
 
