@@ -159,6 +159,7 @@ query {
                                             <input type="file" id="myfile" name="myfile" multiple></input>
                                         </div>
                                     </div>
+                                    <button type="submit" style={{width: '100%', textAlign: 'center', background: '#3396EB', border: 'none', color: '#ffffff', borderRadius: '5px', padding: '15px 0', marginTop: '25px'}}>Send</button>
                                 </form>
 
                             </div>
