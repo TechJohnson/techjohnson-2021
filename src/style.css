@@ -175,7 +175,7 @@ body {
   color: #3396EB;
 }
 
-.showcase a {
+.showcase .showcase-project {
   margin-left: 20px;
   text-decoration: none;
   color: #999999;
@@ -184,7 +184,7 @@ body {
   left: 0;
 }
 
-.showcase a:hover {
+.showcase .showcase-project:hover {
   border-bottom: 1px solid #999999;
   padding-bottom: 2px;
 }
