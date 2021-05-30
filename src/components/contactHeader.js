@@ -124,7 +124,7 @@ query {
                                 <h2 style={{textAlign: 'center', paddingBottom: '15px'}}>Project Submission Form</h2>
                                 <p style={{textAlign: 'center'}}>Are you looking to get started on a new project? If so, fill out the form below and I'll be in contact shortly!</p>
                                 
-                                <form name="business-inquiry" method="post" action="/thanks/" data-netlify="true" data-netlify-honeypot="bot-field" netlify>
+                                <form name="business-inquiry" method="post" data-netlify="true" data-netlify-honeypot="bot-field" netlify>
                                     <input type="hidden" name="business-inquiry" value="business_inquiry" />
                                     <div style={{display:'flex', justifyContent: 'space-between', padding: '50px 0 0 0'}}>
                                         <div style={{width: '49%'}}>   
