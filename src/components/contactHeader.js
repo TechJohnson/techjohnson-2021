@@ -7,6 +7,16 @@ import { Link, useStaticQuery, graphql } from "gatsby"
 const ContactHeader = () => {
 const Desktop = props => <Responsive {...props} minWidth={760} />;
 // const Mobile = props => <Responsive {...props} maxWidth={759} />;
+const [state, setState] = React.useState({})
+
+const handleChange = (e) => {
+  setState({ ...state, [e.target.name]: e.target.value })
+}
+
+const handleAttachment = (e) => {
+  setState({ ...state, [e.target.name]: e.target.files[0] })
+}
+
 const data = useStaticQuery(graphql`
 query {
     portrait: file(absolutePath: { regex: "/steven-portrait.webp/" }) {
@@ -123,13 +133,13 @@ query {
                                 <h2 style={{textAlign: 'center', paddingBottom: '15px'}}>Project Submission Form</h2>
                                 <p style={{textAlign: 'center'}}>Are you looking to get started on a new project? If so, fill out the form below and I'll be in contact shortly!</p>
                                 
-                                <form name="Business Inquiry" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+                                <form name="business-inquiry" method="post" action="/thanks/" data-netlify="true" data-netlify-honeypot="bot-field">
                                     <input type="hidden" name="Business Inquiry" value="business_inquiry" />
                                     <div style={{display:'flex', justifyContent: 'space-between', padding: '50px 0 0 0'}}>
                                         <div style={{width: '49%'}}>   
                                             <div style={{display: 'flex', justifyContent: 'space-between'}}>
-                                                <label style={{display: 'flex', flexDirection: 'column', width: '48%', fontSize: '14px', fontWeight: '700'}}>What is your name?<input type="text" name="name" placeholder="John Smith" style={{marginTop: '10px', padding: '10px', borderRadius: '5px', border: '1px solid #999999'}} /></label>
-                                                <label style={{display: 'flex', flexDirection: 'column', width: '48%', fontSize: '14px', fontWeight: '700'}}>What is your email address?<input type="email" name="email" placeholder="email@email.com" style={{marginTop: '10px', padding: '10px', borderRadius: '5px', border: '1px solid #999999'}} /></label>
+                                                <label style={{display: 'flex', flexDirection: 'column', width: '48%', fontSize: '14px', fontWeight: '700'}}>What is your name?<input type="text" name="name" placeholder="John Smith" onChange={handleChange} style={{marginTop: '10px', padding: '10px', borderRadius: '5px', border: '1px solid #999999'}} /></label>
+                                                <label style={{display: 'flex', flexDirection: 'column', width: '48%', fontSize: '14px', fontWeight: '700'}}>What is your email address?<input type="email" name="email" placeholder="email@email.com" onChange={handleChange} style={{marginTop: '10px', padding: '10px', borderRadius: '5px', border: '1px solid #999999'}} /></label>
                                             </div>
                                             <p style={{display: 'flex', flexDirection: 'column', fontSize: '14px', fontWeight: '700', padding: '25px 0 10px 0'}}>What type of work are you inquiring about?</p>
                                             <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'flex-start'}}>
@@ -155,8 +165,8 @@ query {
                                         </div>
                                         <div style={{width: '45%'}}>
                                             <p style={{padding: '0 0 25px 0'}}>Tell me as much as you possibly can about your project. The more detail, the better I can serve you!</p>
-                                            <label style={{display: 'flex', flexDirection: 'column', fontSize: '14px', fontWeight: '700', margin: '0 0 20px 0'}}>What is your project about?<textarea type="text" name="name" rows="5" placeholder="Hi Steven, I'd love to talk to you about my new project, Web Dev AI. The project is about..." style={{marginTop: '10px', padding: '10px', borderRadius: '5px', border: '1px solid #999999'}} /></label>
-                                            <input type="file" id="myfile" name="myfile" multiple></input>
+                                            <label style={{display: 'flex', flexDirection: 'column', fontSize: '14px', fontWeight: '700', margin: '0 0 20px 0'}}>What is your project about?<textarea type="text" name="name" rows="5" onChange={handleChange} placeholder="Hi Steven, I'd love to talk to you about my new project, Web Dev AI. The project is about..." style={{marginTop: '10px', padding: '10px', borderRadius: '5px', border: '1px solid #999999'}} /></label>
+                                            <input type="file" id="myfile" name="attachment" onChange={handleAttachment} multiple></input>
                                         </div>
                                     </div>
                                     <button type="submit" style={{width: '100%', textAlign: 'center', background: '#3396EB', border: 'none', color: '#ffffff', borderRadius: '5px', padding: '15px 0', marginTop: '25px'}}>Send</button>
