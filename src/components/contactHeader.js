@@ -88,6 +88,11 @@ query {
                                 <h2>I'm a firm believer in making connections.</h2>
                                 <p>Early on in my career, I made it my goal to make connections with everyone I work with. The world is becoming so steril in business communications and I wanted to change that. My goal is to make all my connections personable and friendly. I hate feeling official!</p>
                                 <p>With that said, I do like to seperate my general question inquiries from my business inquiries. If you have a general question regarding my services, or if you would like to just connect and have a chat, I would highly encourage you to reach out to me on any social platform.</p>
+                                <p style={{
+                                    fontWeight: '700'
+                                }}>Email: <span style={{
+                                    fontWeight: '400'
+                                }}>steven@techjohnson.com</span></p>
                                 <div className="socialMedia" style={{
                                     display: 'flex',
                                     justifyContent: 'flex-start',
@@ -113,7 +118,7 @@ query {
                     </div>
 
                     {/* Inquiry Section */}
-                    <div className="form">
+                    {/* <div className="form">
                         <div className="container">
                             <div style={{
                                 background: '#ffffff',
@@ -165,7 +170,7 @@ query {
 
                             </div>
                         </div>
-                    </div>
+                    </div> */}
 
                 </div>
             </Desktop>

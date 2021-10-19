@@ -65,10 +65,10 @@ query {
                                     paddingTop: '25px',
                                     margin: '0'
                                 }}>Message, track and drive your business like a pro. DigiApps provides easy, effective tools to reach new customers or interact with existing customers.</p>
-                                <Link to={'https://digiapps.net'}>
+                                {/* <Link to={'https://digiapps.net'}>
 
                                 <OutlineBtn buttonText="Learn More" />
-                                </Link>
+                                </Link> */}
                             </div>
                             <div style={{
                                 width: '60%'
@@ -110,11 +110,6 @@ query {
                             paddingTop: '25px',
                             margin: '0'
                         }}>Message, track and drive your business like a pro. DigiApps provides easy, effective tools to reach new customers or interact with existing customers.</p>
-                                <Link to={'https://digiapps.net'}>
-
-<OutlineBtn buttonText="Learn More" />
-</Link>
-
                     </div>
                 </div>
             </Mobile>

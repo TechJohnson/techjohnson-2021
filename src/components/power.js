@@ -50,9 +50,14 @@ const Power = () => {
                             }}>
                                 <h3>Knowledge is power</h3>
                                 <h2>Everything you need to scale your business</h2>
-                                <p>My name is Steven Johnson and I have a passion for creating websites to help grow and scale your company to make more sales by combining your goals with my decade-long experience in a fast growing industry.</p>
-                                <BlueBtn buttonText="Learn More" />
-                                <Link to={'https://twitter.com/techjohnson'} target="_blank" rel="noopener noreferrer nofollow">Let's have a conversation</Link>
+                                <p>My name is Steven Johnson and I have a passion for creating websites to grow and scale your company by combining your goals with my decade-long experience in a fast growing industry.</p>
+                                <Link to={'#'} style={{
+                                    padding: '0',
+                                    margin: '0'
+                                }}>
+                                    <BlueBtn buttonText="Learn More" />
+                                </Link>
+                                <Link to={'/contact'} target="_blank" rel="noopener noreferrer nofollow">Let's have a conversation</Link>
                             </div>
                         </div>
                     </div>
@@ -75,10 +80,13 @@ const Power = () => {
                                 <h3>Knowledge is power</h3>
                                 <h2>Everything you need to scale your business</h2>
                                 <p>My name is Steven Johnson and I have a passion for creating websites to help grow and scale your company to make more sales by combining your goals with my decade-long experience in a fast growing industry.</p>
-                                <Link to={'https://twitter.com/techjohnson'}>
+                                <Link to={'#'} style={{
+                                    padding: '0',
+                                    margin: '0'
+                                }}>
                                     <BlueBtn buttonText="Learn More" />
                                 </Link>
-                                <Link to={'https://twitter.com/techjohnson'} target="_blank" rel="noopener noreferrer nofollow">Let's have a conversation</Link>
+                                <Link to={'/contact'} target="_blank" rel="noopener noreferrer nofollow">Let's have a conversation</Link>
                             </div>
                         </div>
                     </div>
