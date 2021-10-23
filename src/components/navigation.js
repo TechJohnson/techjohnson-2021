@@ -27,7 +27,7 @@ const Navigation = () => {
                 </div>
                 <div className='navLinks'>
                     <Link className='menuItem' to={'https://dribbble.com/TechJohnson'} target="_blank" rel="noopener noreferrer nofollow">Projects</Link>
-                    <Link className='menuItem' to={'/'}>Blog</Link>
+                    {/* <Link className='menuItem' to={'/'}>Blog</Link> */}
                     <Link className='menuItemBtn' to={'/contact'}>
                         <BlueBtn buttonText='Hire Me' />
                     </Link>
